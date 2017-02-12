@@ -1,0 +1,21 @@
+.preview-list {
+	a {
+		position: relative;
+		padding-top: 25%;
+		margin-top: 30px;
+		opacity: 0.7;		
+		overflow: hidden;
+		
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		} 
+		
+		&:hover {
+			opacity: 1;
+			overflow: visible;
+			z-index: 2;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+$height: 44px;
+
+.btn {
+	min-width: 50px;
+	padding: 0 25px;
+	display: inline-block;
+	line-height: $height;
+	
+	text-align: center;
+	color: rgb(37, 37, 78);
+	font-size: 15px;
+	font-family: $base-font;
+
+	box-sizing: border-box;
+	background-color: rgb(245, 168, 32);
+	border: 3px solid rgb(245, 168, 32);
+	
+	&--invise {
+		color: #FFF;
+		background: transparent;
+		border-color: #fff;
+	}
+
+	&--icon {
+		padding: 0;
+	}
+
+	&--full {
+		width: 100%;
+	}
+
+	&--link {
+		@extend .btn--icon;
+		background: transparent;
+		border-color: #eee;
+		
+		&.is-active {
+			background: rgb(245, 168, 32);
+			border-color: rgb(245, 168, 32);
+		}
+
+		&:hover {
+			border-color: rgb(245, 168, 32);	
+		}
+	} 
+
+	&--mini {
+		min-width: 0;
+		padding: 0 10px;
+		color: #fff;
+		line-height: $height / 1.5;
+		border: 0
+	}
+
+	&--green {
+		background: green;
+	}
+}
