@@ -39,5 +39,5 @@ jspm_packages
 .idea
 *.psd
 public/
-pages/
+./pages/
 css/style.css
